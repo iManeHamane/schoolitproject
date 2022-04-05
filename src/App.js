@@ -7,11 +7,10 @@ import {
   Routes
 } from 'react-router-dom';
 
-import About from './pages/Formations/Formations';
-import Contact from './pages/Contact/Contact';
-import Home from './pages/Accueil/Accueil';
-import Services from './pages/VosFormations/VosFormations';
-import Testimonial from './pages/Parametres/Parametres';
+import Formations from './pages/Formations/Formations';
+import Accueil from './pages/Accueil/Accueil';
+import VosFormations from './pages/VosFormations/VosFormations';
+import Parametres from './pages/Parametres/Parametres';
 import Navbar from './Components/Navbar/Navbar';
 
 
@@ -21,9 +20,13 @@ function App() {
     <Navbar/>
     <main>
       <Routes>
-        <Route path="/"  element={<Home/>}> 
+        <Route path="/"  element={<Accueil/>}> 
         </Route>
-        <Route path="/about" exact element={<About/>}> 
+        <Route path="/formations" exact element={<Formations/>}> 
+        </Route>
+        <Route path="/vosformations"  element={<VosFormations/>}> 
+        </Route>
+        <Route path="/parametres" exact element={<Parametres/>}> 
         </Route> 
       </Routes>
     </main>

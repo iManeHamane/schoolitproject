@@ -1,5 +1,5 @@
 import React from 'react'
-const About = () => {
+const Formations = () => {
   return (
     <div className="container">
     
@@ -10,4 +10,4 @@ const About = () => {
     </div>
   )
 }
-export default About;
+export default Formations;

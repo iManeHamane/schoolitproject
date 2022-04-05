@@ -1,5 +1,5 @@
 import React from 'react'
-const Services = () => {
+const VosFormations = () => {
   return (
     <div className="container">
     
@@ -10,4 +10,4 @@ const Services = () => {
     </div>
   )
 }
-export default Services;
+export default VosFormations;
