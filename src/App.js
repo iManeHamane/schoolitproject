@@ -7,11 +7,11 @@ import {
   Routes
 } from 'react-router-dom';
 
-import About from './pages/About/About';
+import About from './pages/Formations/Formations';
 import Contact from './pages/Contact/Contact';
-import Home from './pages/Home/Home';
-import Services from './pages/Service/Services';
-import Testimonial from './pages/Testimonial/Testimonial';
+import Home from './pages/Accueil/Accueil';
+import Services from './pages/VosFormations/VosFormations';
+import Testimonial from './pages/Parametres/Parametres';
 import Navbar from './Components/Navbar/Navbar';
 
 

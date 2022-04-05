@@ -3,6 +3,7 @@ import './Navbar.css';
 
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
+<script src="https://kit.fontawesome.com/1568f7ec95.js" crossorigin="anonymous"></script>
 
 const Navbar = () => {
 
@@ -48,7 +49,7 @@ const Navbar = () => {
   <nav className="navbar navbar-expand-lg navbar-mainbg">
     
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
-        Web Solutions
+        School IT
       </NavLink>
     
     
@@ -72,39 +73,31 @@ const Navbar = () => {
             
             <li className="nav-item active">
               <NavLink className="nav-link" to="/" exact>
-                <i 
-                className="fas fa-tachometer-alt">
-                </i>Home
+              <i className="fas fa-home">
+                </i>Accueil
               </NavLink>
             </li>
 
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about" exact>
-                <i 
-                className="far fa-address-book">
-                </i>About
+              <NavLink className="nav-link" to="/formations" exact>
+              <i className="fas fa-graduation-cap"></i>Formations
               </NavLink> 
             </li>
 
             <li className="nav-item">
-              <NavLink className="nav-link" to="/service" exact>
-                <i 
-                className="far fa-clone">
-                </i>Services
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/testimonial" exact>
+              <NavLink className="nav-link" to="/vosformations" exact>
                 <i 
                 className="far fa-chart-bar">
-                </i>Testimonial
+                </i>Vos formations
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact" exact>
+              <NavLink className="nav-link" to="/parametres" exact>
                 <i 
-                className="far fa-copy">
-                </i>Contact Us
+                className="fas fa-cog" 
+                >
+                </i>Paramètres
+               
               </NavLink>
             </li>
         </ul>
