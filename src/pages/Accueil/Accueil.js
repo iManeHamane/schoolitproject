@@ -1,13 +1,10 @@
 import React from 'react'
+import Input from '../../Components/Form/Input';
+
 const Accueil = () => {
   return (
-    <div className="container">
-    
-    <h1 className="text-center" style={{paddingTop: "30%"}}>
-      
-    </h1>
-    
-  </div>
+      <div className="accueil container"></div>
+   
   )
 }
 export default Accueil;

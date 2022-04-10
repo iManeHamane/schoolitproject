@@ -143,3 +143,22 @@ i {
     left: -25px;
   }
 }
+.log{
+  width: 30%;
+  height: 50px;
+  border: 1px solid;
+  background: #c56d15;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin-top:20px;
+  margin-left:500px;
+  
+}
+.log:hover{
+  border-color: #9421b8;
+  transition: .5s;
+}

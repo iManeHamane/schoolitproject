@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 <script src="https://kit.fontawesome.com/1568f7ec95.js" crossorigin="anonymous"></script>
 
-const Navbar = ({setIslogged,setHaveAnAccount,logo}) => {
+const Navbar = ({setIslogged,setHaveAnAccount}) => {
 
   function animation(){
     var tabsNewAnim = $('#navbarSupportedContent');
@@ -84,29 +84,11 @@ const Navbar = ({setIslogged,setHaveAnAccount,logo}) => {
               </NavLink> 
             </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/vosformations" exact>
-                <i 
-                className="far fa-chart-bar">
-                </i>Vos formations
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/parametres" exact>
-                <i 
-                className="fas fa-cog" 
-                >
-                </i>Paramètres
-               
-              </NavLink>
-            </li>
-          
-            <input type="button" value="Se Déconnecter" className="log" onClick={()=>{setIslogged(false);setHaveAnAccount(false);}}/>
+            
+            <input type="button" value="Se Connecter" className="log" onClick={()=>{setHaveAnAccount(true);}}/>
         </ul>
       </div>
-      
   </nav>
-
   )
 }
 export default Navbar;
