@@ -18,7 +18,7 @@ const Parametres = () => {
     </div>
   ):(
     <div >
-    <form >
+    <form className='container'>
       <Input  label="Nom" type="text"/>
       <Input  label="Prenom" type="text"/>
       <Input  label="Date de naissance" type="date"/>

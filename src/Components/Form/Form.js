@@ -14,7 +14,7 @@ const Form = ({setIslogged,setCreerCompte,setHaveAnAccount}) => {
         
         <input type="submit" value="Se Connecter" onClick={()=>{setIslogged(true);}}/>
         <div className="signup_link" >
-          Pas de compte? Créez-en un ! <a onClick={()=>{ setCreerCompte(true);}}>S'inscrire</a>
+          Pas de compte? Créez-en un ! <div onClick={()=>{ setCreerCompte(true);}}>S'inscrire</div>
         </div>
       </form>
     </div>

@@ -14,7 +14,7 @@ const SeConnecter = ({setIslogged, setHaveAnAccount}) => {
         <Form setIslogged={setIslogged}  setHaveAnAccount ={setHaveAnAccount} setCreerCompte={setCreerCompte}/>
         </div>
       ):(
-        <div className="container center" >
+        <div className="container " >
         <Sinscrire setIslogged={setIslogged} setHaveAnAccount={setHaveAnAccount}  setCreerCompte={setCreerCompte}/>
         </div>
 

@@ -1,0 +1,21 @@
+.searchInputs {
+    margin-top: 14px;
+    display: flex;
+  }
+  
+  .chercher div.searchInputs input{
+    background-color: rgb(198, 198, 198);
+    border-radius: 10px;
+   border:0px;
+    margin-left: 950px;
+    font-size: 18px;
+    padding: 17px;
+    height: 17px;
+    width: 300px;
+    margin-top:10px;
+
+  }
+  .chercher div.searchInputs input:focus{
+    border-color : #4f1588;
+  }
+

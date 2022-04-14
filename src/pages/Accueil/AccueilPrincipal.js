@@ -9,28 +9,36 @@ import {
 } from 'react-router-dom';
 import Formations from '../Formations/Formations';
 import Accueil from './Accueil';
-import Parametres from '../Parametres/Parametres';
-import {useState} from "react";
+import Sidebar from '../../Components/SideBar/Sidebar';
+import SearchBar from '../../Components/SearchBar';
 const AccueilPrincipal = ({haveAnAccount,setHaveAnAccount,setIslogged}) => {
-  console.log(haveAnAccount);
+
   return (
     
     <>
-    {!haveAnAccount?( 
+    {
    
-  <Router>
-    <NavBarP  setHaveAnAccount={setHaveAnAccount}/>
+  
+   /*</>Au cas ou vous trouvez la side bar malfaite ou difficile
+   à intégrer vous pouvez enlever le <Sidebar/> et le remplacer par :
+   
+   */ !haveAnAccount? (<Router>
+     
+    <NavBarP  setHaveAnAccount={setHaveAnAccount}/> 
+    <SearchBar/>     
     <main>
       <Routes>
-        <Route path="/"  element={<Accueil/>}> 
+        <Route path="/"  element={<Accueil titre="Formations les plus suivies" />}> 
         </Route>
-        <Route path="/formations" exact element={<Formations/>}> 
+        <Route path="/formations" exact element={<Formations  />}> 
         </Route>
       </Routes>
     </main>
-   </Router> ):(<div><SeConnecter setIslogged={setIslogged} setHaveAnAccount={setHaveAnAccount}/></div>)}
+   </Router> ):(<div >
+    
+     <SeConnecter setIslogged={setIslogged} setHaveAnAccount={setHaveAnAccount}/></div>)}
   
-   </>
+  </>
   )
 }
 export default AccueilPrincipal;

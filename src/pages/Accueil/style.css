@@ -8,24 +8,17 @@
 body{
   margin: 0;
   padding: 0;
+  background: linear-gradient(120deg,#9421b8, #8e44ad);
   height: 100vh;
   overflow:scroll;
 }
-.accueil{
-  background-image: url("moi.jpg");
-  height: 200px;
-  width: 200px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
-}
-
 .center{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  background: white;
+  width: 600px;
+ background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
@@ -42,6 +35,7 @@ body{
 .center h1{
   text-align: center;
   padding: 20px 0;
+  margin-top: 90px;
   border-bottom: 1px solid silver;
 }
 .center form{
@@ -115,15 +109,17 @@ input[type="submit"]:hover{
   border-color: #9421b8;
   transition: .5s;
 }
+
 .signup_link{
   margin: 30px 0;
   text-align: center;
   font-size: 16px;
   color: #666666;
 }
-.signup_link a{
+.signup_link div{
   color: #ff5f02;
   text-decoration: none;
+  cursor: pointer;
 }
 .signup_link a:hover{
   text-decoration: underline;
@@ -184,5 +180,9 @@ a{
     margin-right: 100px;
     text-align: center;
   
+}
+.monImage{
+  position: relative;
+    border-radius:10%;
 }
 

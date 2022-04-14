@@ -1,0 +1,39 @@
+#profile{
+    position:relative;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius:50%;
+}
+
+.video{
+    position:relative;
+}
+
+.textee{
+    box-align:top left;
+    color:black;
+    position:absolute;
+    top:620px;
+    left: 166px;
+    font-size: 17px;
+}
+
+.texte2{
+    box-align:top left;
+    color:gray;
+    position:absolute;
+    top:645px;
+    left: 166px;
+    font-size: 15px;
+}
+
+.like{
+    position: relative;
+    margin-left:550px;
+    color:rgb(14, 235, 14);
+}
+
+.dislike{
+    color:darksalmon;
+}

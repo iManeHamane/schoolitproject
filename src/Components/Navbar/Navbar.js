@@ -3,6 +3,7 @@ import './Navbar.css';
 
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
+import SearchBar from '../SearchBar';
 <script src="https://kit.fontawesome.com/1568f7ec95.js" crossorigin="anonymous"></script>
 
 const Navbar = ({setIslogged,setHaveAnAccount,logo}) => {
@@ -49,7 +50,12 @@ const Navbar = ({setIslogged,setHaveAnAccount,logo}) => {
   <nav className="navbar navbar-expand-lg navbar-mainbg">
     
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
+      <div className="logo">  
+        S 
+        </div>
+        <div>
         School IT
+        </div>
       </NavLink>
     
     
@@ -101,7 +107,7 @@ const Navbar = ({setIslogged,setHaveAnAccount,logo}) => {
               </NavLink>
             </li>
           
-            <input type="button" value="Se Déconnecter" className="log" onClick={()=>{setIslogged(false);setHaveAnAccount(false);}}/>
+            <input type="button" value="Se Déconnecter" className="logout" onClick={()=>{setIslogged(false);setHaveAnAccount(false);}}/>
         </ul>
       </div>
       

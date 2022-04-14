@@ -1,0 +1,74 @@
+#conteneur{
+    position: relative;
+    margin-top: 30px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0.5);
+    border-radius:10%;
+    width: 270px;
+    height: 270px;
+   
+
+}
+
+#back{
+    position: relative;
+    border-radius:10%;
+    
+}
+
+#profil{
+    position:absolute;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius:50%;
+}
+
+
+.top-left{
+    color:rgb(250, 250, 250);
+    position:absolute;
+    top:6px;
+    left: 60px;
+    font-size: 18px;
+}
+
+.top-lef{
+    position:absolute;
+    color:white;
+    top:30px;
+    left: 55px;
+    font-size: 12px;
+}
+
+.top-right {
+    position: absolute;
+    left: 180px;
+    top: 8px;
+    right:16px;
+    color: rgb(255, 255, 255);
+    width:70px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    background-color:#ff5f02;
+    border-radius: 10px;
+    font-size:13px;
+    height: 30px;
+  }
+
+.bottom-center {
+    position: relative;
+    bottom: 70px;
+    color:white;
+    width: 250px;
+    text-align: center;
+    border-radius:10px ;
+    margin-left: 10px;
+    margin-right:20px;
+    font-size:16px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+}
