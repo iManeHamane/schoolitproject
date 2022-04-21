@@ -5,16 +5,21 @@
     border-radius:10%;
     width: 270px;
     height: 270px;
-   
-
 }
 
 #back{
     position: relative;
     border-radius:10%;
+    height: 270px;
+     width: 270px;
     
 }
-
+#conteneur:hover{
+    position: relative;
+    border-radius:10%;
+    width: 290px;
+    height: 290px;
+}
 #profil{
     position:absolute;
     left: 0;
@@ -22,8 +27,6 @@
     margin-top: 10px;
     border-radius:50%;
 }
-
-
 .top-left{
     color:rgb(250, 250, 250);
     position:absolute;

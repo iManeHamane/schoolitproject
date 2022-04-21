@@ -1,9 +1,11 @@
 import React from 'react';
+import Lessons from './Lessons';
 import './UnCours.css';
 const UnCours = () => {
   return (
     <>
-    <div className="container">
+    <div className="container row">
+      <div className='col'>
         <h1 className="text-left" style={{paddingTop: "2%" }}>
           Course-Simple Swift App
         </h1>
@@ -32,7 +34,11 @@ const UnCours = () => {
                 <br></br>
             </p>
         </div>
+        </div>
+        <div className='col'>
 
+          
+        </div>
     </div>   
     </>
     

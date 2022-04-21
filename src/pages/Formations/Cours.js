@@ -1,15 +1,11 @@
 import React  from 'react';
 import './Cours.css';
-import data from './coursData'
-
-
 const Cours = (props) => {
     
     return (
-        <>
-        <div>
+        
             <div id="conteneur" >
-                <img id="back" src={props.photo} alt="background image" height="270px" width="270px" />  
+                <img id="back" src={props.photo} alt="background image" />  
                 <img id="profil" src={props.profil} alt="profile" height="40px"/>
                 <div className="top-left">{props.nom}</div>
                 <div className="top-lef">{props.userName}</div>
@@ -17,9 +13,8 @@ const Cours = (props) => {
                 <div onClick={()=>{props.setClicked(true)}} >
                     <div className="bottom-center">{props.title}</div>
                 </div>
-            </div>              
-        </div>       
-        </>   
+            </div>                
+    
     )
 }
 

@@ -186,10 +186,15 @@ i {
   cursor: pointer;
   outline: none;
   margin-top:15px;
-  margin-left:300px;
+  margin-left:270px;
   
 }
 .log:hover{
   border-color: #9421b8;
   transition: .5s;
+}
+
+
+.hidden{
+  display: none;
 }

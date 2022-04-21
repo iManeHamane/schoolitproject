@@ -8,7 +8,6 @@
 body{
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg,#9421b8, #8e44ad);
   height: 100vh;
   overflow:scroll;
 }
@@ -146,6 +145,7 @@ a{
   
   
 }
+
 .purple1{
   margin-top: 100px;
   width: 70%;

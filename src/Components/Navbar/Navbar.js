@@ -1,13 +1,13 @@
 import React , {useEffect} from 'react'
 import './Navbar.css';
-
+import {useNavigate} from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 import SearchBar from '../SearchBar';
 <script src="https://kit.fontawesome.com/1568f7ec95.js" crossorigin="anonymous"></script>
 
-const Navbar = ({setIslogged,setHaveAnAccount,logo}) => {
-
+const Navbar = () => {
+  const navigate=useNavigate();
   function animation(){
     var tabsNewAnim = $('#navbarSupportedContent');
     var activeItemNewAnim = tabsNewAnim.find('.active');
@@ -47,7 +47,7 @@ const Navbar = ({setIslogged,setHaveAnAccount,logo}) => {
   }, []);
 
   return (
-  <nav className="navbar navbar-expand-lg navbar-mainbg">
+  <nav className={`navbar navbar-expand-lg navbar-mainbg ${false && "hidden"}`}>
     
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
       <div className="logo">  
@@ -107,7 +107,10 @@ const Navbar = ({setIslogged,setHaveAnAccount,logo}) => {
               </NavLink>
             </li>
           
-            <input type="button" value="Se Déconnecter" className="logout" onClick={()=>{setIslogged(false);setHaveAnAccount(false);}}/>
+            <input type="button" value="Se Connecter" className="logout" onClick={()=>{//setIslogged(false);setHaveAnAccount(false);
+            
+          navigate("/login");  }
+          }/>
         </ul>
       </div>
       

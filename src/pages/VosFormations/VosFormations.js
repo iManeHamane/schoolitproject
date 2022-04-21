@@ -4,7 +4,7 @@ const VosFormations = () => {
     <div className="container">
     
         <h1 className="text-center" style={{paddingTop: "30%"}}>
-          Services
+          testtest
         </h1>
         
     </div>

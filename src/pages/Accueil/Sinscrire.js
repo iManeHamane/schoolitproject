@@ -2,7 +2,7 @@ import React from 'react'
 import Form from '../../Components/Form/Form'
 import "../../Components/Form/Input.css";
 import Input from "../../Components/Form/Input";
-const Sinscrire = ({setIslogged, setHaveAnAccount,setCreerCompte}) => {
+const Sinscrire = ({setIslogged,setCreerCompte}) => {
   return (
     
   
@@ -17,7 +17,8 @@ const Sinscrire = ({setIslogged, setHaveAnAccount,setCreerCompte}) => {
         <Input label="Confirmez votre mot de passe" type="password"/>
         <input type="submit" value="Créer un compte" onClick={()=>{setIslogged(true); }}/>
         <div className="signup_link" >
-          Avez-vous déjà un compte? Connectez-vous en ! <div onClick={()=>{ setCreerCompte(false);}}>Se connecter</div>
+          Avez-vous déjà un compte? <div onClick={()=>{ setCreerCompte(false);
+          }}> Connectez-vous !</div>
         </div>
       </form>
     </div>

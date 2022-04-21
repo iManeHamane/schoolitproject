@@ -1,13 +1,13 @@
 import React , {useEffect} from 'react'
 import './Navbar.css';
-
+import {useNavigate} from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 import SearchBar from '../SearchBar';
 <script src="https://kit.fontawesome.com/1568f7ec95.js" crossorigin="anonymous"></script>
 
 const Navbar = ({setIslogged,setHaveAnAccount}) => {
-
+const navigate=useNavigate();
   function animation(){
     var tabsNewAnim = $('#navbarSupportedContent');
     var activeItemNewAnim = tabsNewAnim.find('.active');
@@ -93,7 +93,7 @@ const Navbar = ({setIslogged,setHaveAnAccount}) => {
             </li>
 
             
-            <input type="button" value="Se Connecter" className="log" onClick={()=>{setHaveAnAccount(true);}}/>
+            <input type="button" value="Se Connecter" className="log" onClick={()=>{ navigate("/login");setHaveAnAccount(true); }}/>
         </ul>
       </div>
   </nav>
