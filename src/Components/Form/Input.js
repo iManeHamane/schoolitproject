@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Input.css"
-const Input = (props) => {
+const Input = ({type, label, name}) => {
   return (
     <div className="txt_field">
-    <input type={props.type} required/>
+    <input type={type} name={name} required/>
     <span></span>
-    <label>{props.label}</label>
+    <label>{label}</label>
   </div>
   )
 }
