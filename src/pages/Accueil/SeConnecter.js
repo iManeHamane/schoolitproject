@@ -5,18 +5,18 @@ import "./style.css";
 import {useState} from "react";
 
 
-const SeConnecter = ({setIslogged, setHaveAnAccount}) => {
+const SeConnecter = () => {
   
   const [creerCompte,setCreerCompte]=useState(false);
   return (
     
       !creerCompte ? (
         <div className="container" >
-        <Form setIslogged={setIslogged}  setCreerCompte={setCreerCompte}/>
+        <Form setCreerCompte={setCreerCompte}/>
         </div>
       ):(
         <div className="container " >
-        <Sinscrire setIslogged={setIslogged}  setCreerCompte={setCreerCompte}/>
+        <Sinscrire setCreerCompte={setCreerCompte}/>
         </div>
 
       )
