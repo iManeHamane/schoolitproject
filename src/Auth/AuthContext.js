@@ -9,8 +9,23 @@ const AuthContext = createContext();
 export default AuthContext;
 
 export const AuthProvider = ({ children }) => {
-  const [tokens, setTokens] = useState(null);
-  const [user, setUser] = useState(null);
+  const [tokens, setTokens] = useState(() => {
+    if (localStorage.getItem('access_token')) {
+      const access_token = localStorage.getItem("access_token");
+      const refresh_token = localStorage.getItem('refresh_token');
+      return {access_token, refresh_token};
+    } else {
+      return null;
+    }
+  });
+  const [user, setUser] = useState(() => {
+    if (localStorage.getItem('access_token')) {
+      const user = jwtDecode(localStorage.getItem('access_token'));
+      return user;
+    } else {
+      return null;
+    }
+  }); 
   const navigate = useNavigate();
 
   const loginUser = (e) => {
@@ -34,6 +49,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem('access_token', res.data.access_token);
         localStorage.setItem('refresh_token', res.data.refresh_token);
         setUser(jwtDecode(res.data.access_token));
+        navigate('/');
       })
       .catch((err) => console.log(err.message));
   };
@@ -69,7 +85,10 @@ export const AuthProvider = ({ children }) => {
         axios
           .post(
             '/login',
-            JSON.stringify({ email: body.email, password: body.password }),
+            JSON.stringify({
+              email: JSON.parse(body.email),
+              password: JSON.parse(body.password),
+            }),
             config
           )
           .then((response) => {

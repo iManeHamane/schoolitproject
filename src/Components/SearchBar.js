@@ -26,8 +26,6 @@ const SearchBar = () => {
           placeholder="Chercher"
         />
  
-      
-        
       </div>
     </div>
     </>
