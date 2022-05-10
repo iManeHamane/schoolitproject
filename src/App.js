@@ -13,8 +13,7 @@ function App() {
     <>
       <Router>
         <AuthProvider>
-          <Navbar />
-          <SearchBar />
+        <Navbar />
           <main className='whiteBackground'>
             <Routes>
               <Route path='/' element={<Accueil titre='Formations' />} />

@@ -1,5 +1,4 @@
 import React from 'react'
-import Input from '../../Components/Form/Input';
 import Cours from '../Formations/Cours.js';
 import UnCours from '../Formations/UnCours';
 import data from './AccueilData';

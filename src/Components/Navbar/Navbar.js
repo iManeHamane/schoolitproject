@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Navbar.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 import SearchBar from '../SearchBar';
+import AuthContext from '../../Auth/AuthContext';
 <script
   src='https://kit.fontawesome.com/1568f7ec95.js'
   crossorigin='anonymous'
@@ -39,7 +40,7 @@ const Navbar = () => {
       });
     });
   }
-  const [user, setUser] = useState(null);
+  const { user, logoutUser } = useContext(AuthContext);
   const [login, setLogin] = useState(false);
   const { pathname } = useLocation();
 
@@ -58,7 +59,7 @@ const Navbar = () => {
     } else {
       setLogin(false);
     }
-  })
+  });
 
   return (
     <nav
@@ -105,7 +106,7 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          {user && (
+          {user ? (
             <>
               <li className='nav-item'>
                 <NavLink className='nav-link' to='/vosformations' exact>
@@ -117,19 +118,27 @@ const Navbar = () => {
                   <i className='fas fa-cog'></i>Paramètres
                 </NavLink>
               </li>
-            </>
-          )}
 
-          <input
-            type='button'
-            value='Se Connecter'
-            className='logout'
-            onClick={() => {
-              //setIslogged(false);setHaveAnAccount(false);
-              navigate('/login');
-              
-            }}
-          />
+              <input
+              type='button'
+              value='se Deconnecter'
+              className='logout'
+              onClick={() => {
+                logoutUser();
+                navigate('/');
+              }}
+            />
+            </>
+          ) : (
+            <input
+              type='button'
+              value='Se Connecter'
+              className='logout'
+              onClick={() => {
+                navigate('/login');
+              }}
+            />
+          )}
         </ul>
       </div>
     </nav>
