@@ -2,12 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Formations from './pages/Formations/Formations';
 import Accueil from './pages/Accueil/Accueil';
-import Parametres from './pages/Parametres/Parametres';
+import ParametreFormateur from './pages/Parametres/ParametreFormateur';
 import Navbar from './Components/Navbar/Navbar';
 import SearchBar from './Components/SearchBar';
 import SeConnecter from './pages/Accueil/SeConnecter';
 import PrivateRoute from './Routes/PrivateRoute';
 import { AuthProvider } from './Auth/AuthContext';
+import VosFormationsFormateur from './pages/Formations/VosFormationsFormateur';
+import Cours from './pages/Formations/Cours';
+import Ajouter from './pages/Formations/Ajouter';
 function App() {
   return (
     <>
@@ -34,12 +37,12 @@ function App() {
               />
 
               <Route
-                path='/parametres'
+                path='/parametreformateur'
                 exact
                 element={
-                  <PrivateRoute>
-                    <Parametres />
-                  </PrivateRoute>
+                  
+                    <Formations/>
+                  
                 }
               />
 

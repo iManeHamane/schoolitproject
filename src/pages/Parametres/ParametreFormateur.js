@@ -2,18 +2,30 @@ import React from 'react';
 import Button from './Button';
 import {useState} from "react";
 import Input from "../../Components/Form/Input"
-const Parametres = () => {
+import Bloc from './Bloc';
+const ParametreFormateur = () => {
   const [modifier,setModifier]=useState(false);
   return (
     !modifier?(
     <div >
-      <br></br>
-      <Button value="Nom" className="purple1"/>
-      <Button value="Prenom" className="purple" />
+      <br/>
+      <Button value="Nom et prenom" className="purple1"/>
       <Button value="Date de naissance" className="purple"/>
       <Button value="Email" className="purple"/>
-      <Button value="Mot de passe" className="purple"/>
       <button  className="modifier" onClick={()=>{setModifier(true)}}>Modifier</button>
+      <div className='row down' >
+        <div className='col-md-3'>
+        <Bloc value="  Ajouter une ressource "></Bloc>
+        </div>
+        <div className='col-md-3'>
+        <Bloc value="Ajouter un cours"></Bloc>
+        </div>
+        <div className='col-md-3'>
+        <Bloc value="Ajouter une formation"></Bloc>
+        </div>
+      </div>
+      <div className="right">Voulez-vous rejoindre notre réseau d'auteur ? Contactez-nous sur schoolit.formation@gmail.com </div>
+      
 
     </div>
   ):(
@@ -31,4 +43,4 @@ const Parametres = () => {
   )
   )
 }
-export default Parametres;
+export default ParametreFormateur;

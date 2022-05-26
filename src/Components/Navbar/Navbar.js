@@ -105,6 +105,11 @@ const Navbar = () => {
               <i className='fas fa-graduation-cap'></i>Formations
             </NavLink>
           </li>
+          <li className="nav-item">
+              <NavLink className="nav-link" to="/parametreformateur" exact>
+              <i className="fas fa-graduation-cap"></i>Vos form
+              </NavLink> 
+            </li>
 
           {user ? (
             <>

@@ -128,10 +128,10 @@ a{
   cursor: pointer
 }
 .purple{
-  width: 70%;
+  width: 60%;
   height: 50px;
   border: 1px solid;
-  margin: 10px;
+  margin: 20px;
   background: #4f1588;
   border-radius: 25px;
   font-size: 18px;
@@ -139,16 +139,16 @@ a{
   font-weight: 700;
   cursor:default;
   outline: none;
-  margin-left: 150px;
-  margin-right: 100px;
+  margin-left: 250px;
+  margin-right: 150px;
   text-align: center;
   
   
 }
 
 .purple1{
-  margin-top: 100px;
-  width: 70%;
+  margin-top: 300px;
+  width: 60%;
   height: 50px;
   border: 1px solid;
   margin: 10px;
@@ -159,8 +159,8 @@ a{
   font-weight: 700;
   cursor: default;
   outline: none;
-  margin-left: 150px;
-  margin-right: 100px;
+  margin-left: 250px;
+  margin-right: 150px;
   text-align: center;
 }
 .modifier{
@@ -176,7 +176,7 @@ a{
     font-weight: 700;
     cursor: pointer;
     outline: none;
-    margin-left: 400px;
+    margin-left: 450px;
     margin-right: 100px;
     text-align: center;
   

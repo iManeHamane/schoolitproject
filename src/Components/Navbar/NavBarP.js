@@ -91,6 +91,7 @@ const navigate=useNavigate();
               <i className="fas fa-graduation-cap"></i>Formations
               </NavLink> 
             </li>
+            
 
             
             <input type="button" value="Se Connecter" className="log" onClick={()=>{ navigate("/login");setHaveAnAccount(true); }}/>
