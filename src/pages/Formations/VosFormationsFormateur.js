@@ -16,7 +16,7 @@ const VosFormationsFormateur = () => {
 
         </div>
         <h2>
-            Liste des formations
+            Liste des cours
         </h2>
         <br></br>
         <div className="row">

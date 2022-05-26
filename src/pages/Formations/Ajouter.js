@@ -9,7 +9,7 @@ const Ajouter = () => {
         <>
         <SearchBar></SearchBar>
         <h2>
-        Ajouter une formations
+        Ajouter un cours
         </h2>
         <div>
             <Button className="purple" value="Titre"></Button>
