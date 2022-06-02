@@ -1,29 +1,29 @@
 import React from "react";
 import Bloc from "../Parametres/Bloc";
-import Button from "../Parametres/Button";
-import SearchBar from "../../Components/SearchBar";
 import "./Ajouter.css";
 
 const Ajouter = () => {
     return (
         <>
-        <SearchBar></SearchBar>
-        <h2>
-        Ajouter un cours
+        <h2 className="margint">
+        Ajouter une formation
         </h2>
-        <div>
-            <Button className="purple" value="Titre"></Button>
-            <Button className="purple" value="Spécialité"></Button>
+        <div className="centrer">
+            <input className="purple" placeholder="Titre"></input>
+            <input className="purple" placeholder="Spécialité"></input>
 
         </div>
-       <div className="centre">
+        <h2 className="margin">
+        Liste des cours
+        </h2>
+       <div >
         <br></br>
         <div className="row">
-            <div className="col-md-3"> 
-               <Bloc value="Ajouter une vidéo"></Bloc>
+            <div className="col-md-2"> 
+               <Bloc  ></Bloc>
             </div>
-            <div className="col-md-3"> 
-               <Bloc value="Ajouter un texte"></Bloc>
+            <div className="col-md-2"> 
+               <Bloc i="far fa-plus-square icone"></Bloc>
             </div>
 
         </div>

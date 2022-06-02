@@ -1,0 +1,126 @@
+.btn1 {
+    background-color: #4f1588;
+    border: 1px solid #4f1588; /* Remove borders */
+    color: #fff ; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    margin-left:190px;
+    padding-left: 10px; 
+    text-align: center;
+    border-radius: 40px;
+    height: 45px;
+    width: 180px;
+    transition-duration: 0.4s;
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+
+  .btn1:hover {
+    background-color: #fff;
+    color: #4f1588;
+    border: 1px solid #ff5f02; /* Remove borders */
+
+  }
+  
+
+  .btn2 {
+    background-color: #b181e0;
+    border: 1px solid #b181e0; /* Remove borders */
+    color: #fff ; /* White text */
+    font-size: 16px; /* Set a font size */
+    margin-left:150px;
+    text-align: center;
+    border-radius: 40px;
+    height: 45px;
+    width: 180px;
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+
+  .btn2:hover {
+    background-color: #fff;
+    color: #b181e0;
+    border: 1px solid #ff5f02; /* Remove borders */
+
+  }
+
+
+.left{
+  float: left;
+  width:35%;
+}
+
+.right{
+  margin-left: 5px;
+}
+.caret {
+  padding-left: 300px;
+}
+
+
+.btn11{
+  height:200px;
+  width: 200px;
+  margin-bottom: 20px;
+  border-radius:20px;
+  background-color: #c8c6ca;
+}
+
+.btn21{
+  height:200px;
+  width: 200px;
+  margin-top: 20px;
+  border-radius:20px;
+  background-color: #c8c6ca;
+}
+
+.text1{
+  margin-left: 65px;
+  font-size: 20px;
+}
+
+.zone1{
+  background-color: #4f1588;
+  font-size:16px;
+  text-align: left;
+  border-radius: 30px;
+  padding-left: 25px;
+  width: 480px;
+  height: 55px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+.zone2{
+  background-color: #4f1588;
+  font-size:16px;
+  text-align: left;
+  border-radius: 30px;
+  padding-left: 25px;
+  width: 480px;
+  height: 55px;
+  color: white;
+}
+
+.zone3{
+  background-color: #4f1588;
+  font-size:16px;
+  text-align: top left;
+  border-radius: 30px;
+  padding-left: 25px;
+  width: 480px;
+  height: 255px;
+  margin-top: 70px;
+  color: white;
+}
+
+.btn31{
+  margin-top:70px;
+  background-color:#ff5f02;
+  border-radius:30px;
+  margin-bottom:100px;
+  color:white;
+  padding-left: 8px;
+  width: 150px;
+  height: 50px;
+}
