@@ -22,9 +22,9 @@ const UneRessource = () => {
     <div className="parent ">
 
         <div className="left" >
-            <button className="btn11"> <span class="caret"><i class="far fa-cloud-upload"></i></span> </button>
+            <button className="btn11"> <i class="fas fa-upload fa-2x"></i></button>
             <div className="text1">Video</div>
-            <button className="btn21"><span class="caret"><i class="fas fa-cloud-upload" align="center"></i></span></button>
+            <button className="btn21"><i class="fas fa-upload fa-2x"></i></button>
             <div className="text1" margin-bottom="100px">Miniature</div>
         </div>
 

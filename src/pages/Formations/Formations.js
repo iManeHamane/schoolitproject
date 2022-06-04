@@ -5,11 +5,9 @@ import UnCours from './UnCours.js';
 import { useState } from 'react';
 import SearchBar from '../../Components/SearchBar.js';
 import AuthContext from '../../Auth/AuthContext.js';
-
 const Formations = ({ titre }) => {
   const [clicked, setClicked] = useState(false);
   const { user } = useContext(AuthContext);
-
   return !clicked ? (
     <>
       <SearchBar />
@@ -18,7 +16,6 @@ const Formations = ({ titre }) => {
           <h1 className='text-left' style={{ paddingTop: '2%' }}>
             {titre}
           </h1>
-
           <div className='content-grid'>
             <div className='row'>
               {data.map((val, index) => {
