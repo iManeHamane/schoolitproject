@@ -6,9 +6,12 @@ import Input from "../../Components/Form/Input"
 const Parametres = () => {
   const [modifier,setModifier]=useState(false);
   const [formateur,setFormateur]=useState(true);
+  const [candidat,setCandidat]=useState(false);
+
   return (
     !modifier?(
      formateur?(
+      !candidat?(
     <div >
       <br/>
       <Button value="Nom et prenom" className="purple"/>
@@ -29,10 +32,26 @@ const Parametres = () => {
         <Bloc  i="far fa-plus-square icone"></Bloc>
         </div>
       </div>
-      <div className="right">Voulez-vous rejoindre notre réseau d'auteur ? Contactez-nous sur <a >schoolit.formation@gmail.com</a> </div>
+      <div className="right">Voulez-vous rejoindre notre réseau d'auteur ? Soumettez votre candidature  </div>
+      <input type="submit" value="Soumettre" onClick={()=>{ setCandidat(true);}}/>
       
 
-    </div>
+    </div>):(
+      <>
+      <div >
+     <form className='container'>
+   <Input  label="Nom et Prenom" type="text"/>
+   <Input  label="Niveau d'etude" type="text"/>
+   <Input  label="Carte d'identité nationale" type="file"/>
+   <Input  label="Motivation"/>
+    <input type="submit" value="Soumettre" onClick={()=>{ setCandidat(false);}}/>
+    
+   </form>
+   </div>
+     
+               
+     </>   
+    )
     
     
     ):( <div >

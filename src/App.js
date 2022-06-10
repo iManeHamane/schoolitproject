@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import SeConnecter from './pages/Accueil/SeConnecter';
 import PrivateRoute from './Routes/PrivateRoute';
 import { AuthProvider } from './Auth/AuthContext';
+import Parametres from './pages/Parametres/Parametres';
 function App() {
   return (
     <>
@@ -18,8 +19,10 @@ function App() {
               <Route
                 path='/formations'
                 exact
-               // element={<Introduction titre=" titre ici" contenu="contenu par ici"/>}
-                element={<Formations titre='Formations' />}
+               //element={<Introduction titre=" titre ici" contenu="contenu par ici"/>}
+                //element={<Formations titre='Formations' />}
+                element={<Parametres/>}
+
               />
               {/* privates */}
               <Route
